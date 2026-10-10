@@ -76,3 +76,14 @@ If the backend is not on `http://127.0.0.1:8011`, create `frontend/.env`:
 ```text
 VITE_API_URL=http://127.0.0.1:8011
 ```
+
+## Deploy The Backend On Render
+
+- Root directory: `backend`
+- Build command: `pip install -r requirements.txt`
+- Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- Health check path: `/health`
+
+The `.python-version` files select Python 3.12, which is compatible with the pinned backend dependencies. If a Render `PYTHON_VERSION` environment variable is set, remove it so the repository version takes effect, or set it to a fully qualified Python 3.12 patch version. After changing the runtime, choose **Clear build cache & deploy**.
+
+For persistent order and catalog storage, attach a disk at `/var/data` and set `CLASSSY_DATABASE_PATH=/var/data/classsy.sqlite3`. Configure your own admin credentials and set `CLASSSY_CORS_ORIGINS` to your frontend's HTTPS origin.
