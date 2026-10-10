@@ -71,7 +71,7 @@ npm run dev
 
 Open the URL Vite prints, usually `http://localhost:5173`.
 
-If the backend is not on `http://127.0.0.1:8011`, create `frontend/.env`:
+Local development uses `http://127.0.0.1:8011`; production builds use `https://classycollection-1.onrender.com`. To override either default, set `VITE_API_URL` in the frontend's Render environment settings or create `frontend/.env` locally:
 
 ```text
 VITE_API_URL=http://127.0.0.1:8011

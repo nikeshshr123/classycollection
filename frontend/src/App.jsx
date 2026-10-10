@@ -5,7 +5,7 @@ import {
   Plus, Search, ShoppingBag, SlidersHorizontal, Sparkles, Trash2, Upload, X,
 } from "lucide-react";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8011";
+const API_URL = (import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://127.0.0.1:8011" : "https://classycollection-1.onrender.com")).replace(/\/$/, "");
 const categoryFallback = ["Girls Clothes", "Jewellery", "Nails", "Makeup"];
 const emptyProduct = { name: "", category: "Girls Clothes", price: 1, style: "", description: "", image: "", stock: 0, featured: false, discountPercent: 0, offerLabel: "", options: "" };
 
