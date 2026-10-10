@@ -1,0 +1,1 @@
+"""Classsy Collection backend package."""

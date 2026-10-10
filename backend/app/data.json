@@ -1,0 +1,112 @@
+{
+  "site": {
+    "brand": "Classsy Collection",
+    "tagline": "Girls clothes, jewellery, nails, and makeup curated with shine.",
+    "heroTitle": "Classsy Collection",
+    "heroSubtitle": "Soft outfits, statement jewellery, pretty nails, and makeup picks for everyday glam.",
+    "heroImage": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=88",
+    "announcement": "Cash on delivery available inside city areas.",
+    "phone": "+977 9800000000",
+    "email": "hello@classsycollection.com",
+    "address": "Putalisadak, Kathmandu",
+    "instagram": "@classsycollection",
+    "whatsapp": "+977 9800000000",
+    "esewaQr": "",
+    "mobileBankingQr": "",
+    "todayOffer": "",
+    "groupSale": "",
+    "deliveryInfo": "Delivery timing and charges are confirmed before dispatch.",
+    "returnPolicy": "Please message us before ordering to confirm sizing and exchange eligibility."
+  },
+  "products": [
+    {
+      "id": "dress-rose-party",
+      "name": "Rose Party Dress",
+      "category": "Girls Clothes",
+      "price": 3499,
+      "style": "Party wear",
+      "description": "A soft rose dress with layered skirt detail for birthdays, photoshoots, and family events.",
+      "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85",
+      "stock": 12,
+      "featured": true
+    },
+    {
+      "id": "kurti-lilac-set",
+      "name": "Lilac Kurti Set",
+      "category": "Girls Clothes",
+      "price": 2899,
+      "style": "Ethnic casual",
+      "description": "Comfortable lilac kurti set with a clean festive look and easy movement.",
+      "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "stock": 18,
+      "featured": false
+    },
+    {
+      "id": "jewellery-pearl-choker",
+      "name": "Pearl Glow Choker",
+      "category": "Jewellery",
+      "price": 1299,
+      "style": "Pearl finish",
+      "description": "A polished pearl choker that pairs beautifully with party dresses and ethnic sets.",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=80",
+      "stock": 30,
+      "featured": true
+    },
+    {
+      "id": "jewellery-bracelet-gold",
+      "name": "Golden Charm Bracelet",
+      "category": "Jewellery",
+      "price": 999,
+      "style": "Gold plated",
+      "description": "Lightweight charm bracelet for daily styling and gifting.",
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=80",
+      "stock": 25,
+      "featured": false
+    },
+    {
+      "id": "nails-blush-gel",
+      "name": "Blush Gel Nail Set",
+      "category": "Nails",
+      "price": 799,
+      "style": "Press-on gel",
+      "description": "Reusable blush-tone nails with glossy finish and easy application.",
+      "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80",
+      "stock": 22,
+      "featured": true
+    },
+    {
+      "id": "nails-glitter-kit",
+      "name": "Glitter Nail Kit",
+      "category": "Nails",
+      "price": 1199,
+      "style": "DIY kit",
+      "description": "A compact nail kit with glitter accents for salon-like looks at home.",
+      "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=80",
+      "stock": 16,
+      "featured": false
+    },
+    {
+      "id": "makeup-lip-tint",
+      "name": "Cherry Lip Tint",
+      "category": "Makeup",
+      "price": 699,
+      "style": "Everyday tint",
+      "description": "A buildable cherry tint with a light feel and fresh finish.",
+      "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=80",
+      "stock": 40,
+      "featured": true
+    },
+    {
+      "id": "makeup-soft-glam-kit",
+      "name": "Soft Glam Makeup Kit",
+      "category": "Makeup",
+      "price": 2499,
+      "style": "Starter kit",
+      "description": "A simple glam kit with coordinated tones for parties and daily looks.",
+      "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80",
+      "stock": 10,
+      "featured": false
+    }
+  ],
+  "orders": []
+}
