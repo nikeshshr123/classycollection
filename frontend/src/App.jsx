@@ -67,13 +67,20 @@ function Storefront() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   async function loadStore() {
-    const payload = await api("/api/site");
-    setSite(payload.site);
-    setProducts(payload.products);
-    setCategories(payload.categories?.length ? payload.categories : categoryFallback);
-    setLoading(false);
+    setLoading(true);
+    setNotice("");
+    try {
+      const payload = await api("/api/site");
+      setSite(payload.site);
+      setProducts(payload.products);
+      setCategories(payload.categories?.length ? payload.categories : categoryFallback);
+    } catch {
+      setNotice("We couldn't connect to the shop. Please try again in a moment.");
+    } finally {
+      setLoading(false);
+    }
   }
-  useEffect(() => { loadStore().catch((error) => { setNotice(error.message); setLoading(false); }); }, []);
+  useEffect(() => { loadStore(); }, []);
 
   const visibleProducts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
@@ -132,7 +139,8 @@ function Storefront() {
     } catch (error) { setNotice(error.message); }
   }
 
-  if (loading || !site) return <main className="loading-screen"><Sparkles /><span>Opening Classsy Collection</span></main>;
+  if (loading) return <main className="loading-screen"><Sparkles /><span>Opening Classsy Collection</span></main>;
+  if (!site) return <main className="loading-screen"><Sparkles /><span>Unable to open the shop</span><p role="alert">{notice}</p><button className="button button-dark" onClick={loadStore}>Try again <ArrowRight size={16} /></button></main>;
   const promoText = site.todayOffer || site.announcement;
   return <>
     <div className="announcement-bar"><Sparkles size={14} /> <span>{promoText}</span><a href="#products">Shop the edit <ArrowRight size={13} /></a></div>
